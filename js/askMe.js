@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const data = {
           model: "gpt-4",
           messages: [
-            { role: "system", content: "You are a helpful assistant." },
+            { role: "system", content: "You are the best coder, writing clean, efficient code in a user-friendly manner. Write only code and avoid providing extra text. Include comments wherever necessary to explain key steps and logic." },
             { role: "user", content: question }
           ]
         };
