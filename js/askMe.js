@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setIsLoading(true);
 
         // OpenAI API integration
-        const apiKey = process.env.OPENAI_APIKEY  // || '<YOUR-API-KEY>';  Replace with your OpenAI API key
+        const apiKey = window.OPENAI_APIKEY;
         console.log(process.env.OPENAI_APIKEY);
 
         const headers = {
