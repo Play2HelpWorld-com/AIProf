@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // OpenAI API integration
         const apiKey = process.env.OPENAI_APIKEY  // || '<YOUR-API-KEY>';  Replace with your OpenAI API key
+        console.log(process.env.OPENAI_APIKEY);
 
         const headers = {
           'Content-Type': 'application/json',
@@ -36,6 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         const api_url = "https://api.openai.com/v1/chat/completions";
+
+        console.log(api_url, data, headers);
 
         fetch(api_url, {
           method: "POST",
