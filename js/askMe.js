@@ -59,8 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then((result) => {
           const ans = result.choices[0].message.content; // Extract OpenAI's response
           forVoice = ans;
-          // setResponse(ans);
-          setResponse(ans.replace(/\n/g, '<br>'););
+          setResponse(ans);
           setIsLoading(false);
         })
         .catch((error) => {
